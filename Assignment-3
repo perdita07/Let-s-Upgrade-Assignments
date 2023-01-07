@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Apple.com Homepage</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/"><img src="images/logo.png" width="25" height="25"></a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">iPad</a></li>
+                <li><a href="#">iPhone</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">TV</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Where to buy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner" id="banner_one">
+            <h1>iPhone 14 PRO</h1>
+            <h2>Pro.Beyond</h2>
+            <p><a href="/">Learn more ></a></p>
+        </div>
+
+        <div class="banner" id="banner_two">
+            <h1>iPhone 14</h1>
+            <h2>Big and bigger.</h2>
+            <p><a href="/">Learn more ></a></p>
+        </div>
+
+        <div class="banner" id="banner_three">
+            <h1>WATCH</h1>
+            <h2>A healthy leap ahead,</h2>
+            <p class="label">Series 5</p>
+            <p><a href="/">Learn more ></a></p>
+        </div>
+
+        <div class="category">
+            <div class="box" id="box1">
+                <h1>WWDC20</h1>
+                <h2>Take a look at all of the announcements.</h2> <br>
+                <p><a href="/">Watch the keynote on our US site ></a></p>
+            </div>
+            <div class="box" id="box2">
+                <h1>Fitness+</h1>
+                
+                <h2>Welcome to the year fo you. Now all you need is iPhone.</h2>
+                <p><a href="/">Learn more ></a></p>
+            </div>
+        </div>
+        <div class="category">
+            <div class="box" id="box3">
+                <h1>MacBook Pro</h1>
+                <h2>Power. Moves.</h2> <br>
+                <p><a href="/">Learn more ></a></p>
+            </div>
+            <div class="box" id="box4">
+                <h1>iPad</h1>
+                <h2>Lovable. drawable. Magical.</h2>
+                <p><a href="/">Learn more ></a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>1. iPhone 8 or later or Apple Watch Series 3 or later paired with iPhone 6s or later required. New subscribers only. $9.99/month after trial. Plan automatically renews until cancelled. Terms apply.</p><br>
+            <p>2. $4.99/month after free trial. One subscription per Family Sharing group. <br>
+             Offer good for 3 months after eligible device activation. Plan automatically renews until cancelled. Restrictions and other terms apply.<br>
+             A subscription is required for Apple Fitness+.
+             Apple Fitness+ requires iOS 14.3 or later, iPadOS 14.3 or later, watchOS 7.2 or later, and tvOS 14.3 or later. <br>
+             Make sure your devices are running the latest software version.<br>
+             To access and use all the features of Apple Card, you must add Apple Card to Wallet on an iPhone or iPad with the latest version of iOS or iPadOS.<br>
+            Update to the latest version by going to Settings > General > Software Update. Tap Download and Install.
+            Available for qualifying applicants in the United States.<br>
+            Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch.
+            Learn more about how Apple Card applications are evaluated at support.apple.com/kb/HT209218</p><br>
+           
+            <p>
+                Copyright &copy; 2023 Apple Inc. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    position: fixed;
+    background-color: black;
+    color: lightgray;
+    width: 100%;
+    height: 40px;
+    font-size: 12pt;
+}
+
+ul {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 10px 50px;
+}
+
+li {
+    list-style: none;
+    margin-left: 60px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding-top: 40px;
+}
+
+#banner_one, #banner_two, #banner_three {
+    background-image: url('images/bg1.jpg');
+    background-size: cover;
+    height: 90vh;
+    background-position-y: -150px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.banner > * {
+    display: flex;
+    justify-content: center;
+}
+
+.banner h1 {
+    font-size: 40pt;
+}
+
+.banner h2 {
+    font-size: 26pt;
+    font-weight: lighter;
+}
+
+.banner a {
+    font-size: 16pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#banner_two {
+    background-image: url('images/bg2.jpg');
+    background-position-y: -50px;
+}
+
+#banner_three {
+    background-image: url('images/bg3.jpg');
+    background-position-y: -100px;
+}
+
+.category {
+    display: flex;
+}
+
+.category .box {
+    text-align: center;
+    height: 80vh;
+    width: 50%;
+    margin: 10px;
+    background-size: cover;
+    padding-top: 20px;
+    color: white;
+}
+
+.category .box a { 
+    text-decoration: none;
+    font-size: 14pt;
+    padding-top: 20px;
+}
+
+#box1 {
+    background-image: url('images/card1.jpg');
+}
+
+#box2 {
+    background-image: url('images/card2.jpg');
+    color: black;
+}
+
+#box3 {
+    background-image: url('images/card3.jpg');
+}
+
+#box4 {
+    background-image: url('images/card4.jpg');
+    color: black;
+}
+
+#box2 .label {
+    color: red;
+    font-size: 14pt;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
+
+footer {
+    background-color: rgba(211,211,211,0.8);
+    width: 100%;
+    height: 200px;
+}
+
+footer .container {
+    width: 80%;
+    margin: 20px auto;
+    padding-top: 20px;
+}
+
+footer .container > * {
+    font-size: 10pt;
+    color: gray;
+}
+
+
+
+
+
+
+
